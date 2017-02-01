@@ -5,7 +5,7 @@ import {
   StyleSheet,
 } from 'react-native';
 
-import Main from './App/Components/Main';
+import Main from './src/components/Main';
 
 const t = require('tcomb-form-native');
 
