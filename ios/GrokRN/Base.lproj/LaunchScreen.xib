@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,39 +15,22 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsl-ul-TSQ" userLabel="Container">
-                    <rect key="frame" x="96" y="96" width="288" height="288"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grok" translatesAutoresizingMaskIntoConstraints="NO" id="HFZ-aR-FXh" userLabel="GrokImage">
-                            <rect key="frame" x="0.0" y="0.0" width="288" height="226.5"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="HFZ-aR-FXh" secondAttribute="height" multiplier="300:236" id="Kta-JY-DQd"/>
-                            </constraints>
-                        </imageView>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grok" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX" userLabel="GrokLabel">
-                            <rect key="frame" x="0.0" y="226.5" width="288" height="81.5"/>
-                            <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="70"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="HFZ-aR-FXh" firstAttribute="top" secondItem="Hsl-ul-TSQ" secondAttribute="top" id="BNy-VY-oDh"/>
-                        <constraint firstItem="kId-c2-rCX" firstAttribute="centerX" secondItem="Hsl-ul-TSQ" secondAttribute="centerX" id="O8b-SE-elx"/>
-                        <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="HFZ-aR-FXh" secondAttribute="bottom" id="R1b-am-2JU"/>
-                        <constraint firstItem="HFZ-aR-FXh" firstAttribute="width" secondItem="Hsl-ul-TSQ" secondAttribute="width" id="XAd-NV-FpE"/>
-                        <constraint firstItem="HFZ-aR-FXh" firstAttribute="centerX" secondItem="Hsl-ul-TSQ" secondAttribute="centerX" id="YJe-3F-kd7"/>
-                        <constraint firstItem="kId-c2-rCX" firstAttribute="width" secondItem="Hsl-ul-TSQ" secondAttribute="width" id="pgV-tt-b0S"/>
-                    </constraints>
-                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grok" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZp-h7-TQM" userLabel="GrokLabel">
+                    <rect key="frame" x="189.5" y="253" width="101.5" height="56"/>
+                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="48"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grok" translatesAutoresizingMaskIntoConstraints="NO" id="vBU-K3-bPX">
+                    <rect key="frame" x="165" y="85" width="150" height="118"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Hsl-ul-TSQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7lG-Hb-VzR"/>
-                <constraint firstItem="Hsl-ul-TSQ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.6" id="ME2-Y6-etv"/>
-                <constraint firstItem="Hsl-ul-TSQ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="UyB-xj-Wmh"/>
-                <constraint firstItem="Hsl-ul-TSQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yPv-tx-3ZB"/>
+                <constraint firstItem="qZp-h7-TQM" firstAttribute="top" secondItem="vBU-K3-bPX" secondAttribute="bottom" constant="50" id="LZ1-Up-EhV"/>
+                <constraint firstItem="vBU-K3-bPX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PFg-l8-7B3"/>
+                <constraint firstItem="vBU-K3-bPX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="85" id="aLq-0a-l2r"/>
+                <constraint firstItem="qZp-h7-TQM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fQH-Ph-Air"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
